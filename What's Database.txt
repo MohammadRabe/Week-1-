@@ -1,0 +1,32 @@
+
+What's database ?
+
+any collection of data called database
+
+
+____Types of Databases____
+
+* Relational DB ( SQL )
+* Non-relational DB ( no SQL == not just SQL ) 
+
+
+____Relational DB____
+
+- Table has relational data
+
+* It's the popular type
+* SQL (Structures Query Language) is the standard language to interact with RDBMS ( do C.R.U.D ) operations
+
+
+____Non-relational DB____
+
+- has no relational data
+
+* there is no a specific language to make queries
+* types are : graph DB, key-value hash, document DB, wide-column
+
+____Database queries____
+
+commands or requests to the database 
+
+example: Google search

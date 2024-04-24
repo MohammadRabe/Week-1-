@@ -1,0 +1,82 @@
+
+____Relational DB____
+
+* structured
+* tables
+* objects in form of tuples (rows)
+* mostly it has a primary key (a unique attribute)
+* SQL is the standard language
+* the schema (data model) is exciplict to changing
+
+
+examples of relational DB systems : Oracle, postger,  SQLserver, mySQL
+_______________________________________________
+
+____NoSQL DB____
+
+* semi-structured
+* flexible schema ( easily adaptable to changes )
+* no specific language
+
+-- types on NoSQL DB : 
+
+- graph DB
+objects is about nodes and each two nodes have a relation there is an edge has the data of the relation
+examples : tigerGraph, cosmosDB
+
+- key-value hash
+array has key-value pairs
+* suitable when there are frequent queries
+example : RocDB
+
+- wide-column stores
+* suitable for analytical queries ( when we need to use a specific attribute from objects or merge two cols )
+example : Google BigTable
+
+- document DB
+objects is about documents 
+group of docs is a collection
+
+examples: JSON, XML  files
+examples of docDB : MongoDB, couchbase
+_______________________________________________
+
+Relational and NoSQL differ to each other also due to : scaling , transaction
+
+____Scaling____
+
+there are two types of scaling : vertical, horizontal
+
+- vertical scaling is to upgrade the server resources 
+- horizontal scaling is to make the database distributed on multiple machines or virtual machines and that's sharding/partitioning which divides database into one of two types : vertical shards ( some of columns ) or horizontal shards ( some of tuples )
+
+____Transaction____
+
+like transfer a sum form a client to another
+
+* A system is called transactional system if it has ACID properties
+Atomicty: all operations done or nothing 
+Consistency: the constrains are applied on the data
+Isolation: the transaction is performed as if it's the only one
+Durability: the data be saved after the transaction is done
+
+* Relational DB is transactional  --  not all No-SQL support transaction
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

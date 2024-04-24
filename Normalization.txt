@@ -1,0 +1,48 @@
+Normalization database is to reduce redundency and improve integrity
+there are five layers must be taken one by another to get a safe database
+
+___________(1NF)first normal form____________
+
+to detect that :
+
+- there is no multi-valued members in a column
+- no use of the row order to convey info in order
+- there is a primary key ( to prevent duplication ) 
+
+*prevented by DBMS by default
+- a column doesn't have different datatypes
+- not more than one column have the same name ( same attribute name have two values )
+
+
+___________(2NF)second normal form____________
+
+- DB satisfies 1NF
+- detect that all non-primary-key attributes depend on primary key
+
+2NF sovles : deletion anomaly, update anomaly, insertion anomaly
+
+
+___________(3NF)third normal form_____________
+
+- DB satisfies 2NF 
+- detect that no non-key depends on non-key
+
+3Nf solves : the same of 2NF
+
+
+___________(3.5NF)BCNF=Boyc-codd-normal-form__ 
+
+- 3NF satisfied
+- no key depends on non-key ( seldom happens )
+
+___________4NF_____________
+
+- 3.5NF satisfied
+- every non-trivial multi-valued dependencies must depend on the key
+( if we have many things related to many things we'd better to separate them )
+
+___________5NF_____________
+
+- 4NF satisfied
+- there is no join-dependencies ----------> joined tables
+the action is to separate them into the joined tables

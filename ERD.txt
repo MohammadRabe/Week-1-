@@ -1,0 +1,63 @@
+Entity Relationships diagram
+
+- rectangle for entity        
+
+- oval shape for attribute
+
+
+-----------Entities-------------
+it's the objects
+
+types :
+
+- strong --------------> whose existence does not depend on the parent entity existence
+- weak ----------------> whos existence depends ***the key in weak called partial key***
+
+example of weak entity : if we have two entities one is for employee and two for his car the car entity is weak
+
+
+-----------Attributes-----------
+
+- simple 
+- composite : an attribute breaks down into more attributes ( the attr consists of them )
+- multi-valued : an attr have more than one column ----> it's represented by two ellipses
+- complex : multi-valued and composite in the same time
+- derieved : derieved from other attributes
+
+
+-----------Relationships--------
+
+properties : - degree of relationship
+	     - cardinality
+	     - participation
+
+* degree of relashionship (type of relationship) : - unary (recursive)
+					           - binary (common)
+						   - ternary
+
+* cardinality ( the max of type ) : 
+
+_ one-to-one
+_ one-to-many
+_ many-to-many
+
+* participation ( the min of type ): 
+
+- total participation ========> all instances of this type should do this relation
+- partial participation ======> not nesserily for the type to do this relation
+
+
+-----------Keys-----------------
+
+types : 
+* super keys : all possible keys
+	- candidate key : the minimal super-key
+	- composite key : composite
+* primary key : the chosen key
+* alternate key : the not chosen candidate keys
+* natural key : a key has meaning in reality
+* surrogate key : a key that doesn't
+* foriegn key : a key that refers to a key in another table to take the validation from its column 
+
+
+  

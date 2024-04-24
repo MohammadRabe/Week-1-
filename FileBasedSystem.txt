@@ -1,0 +1,15 @@
+* Delimeted file
+* Fixed width file
+
+Problems ==>
+
+- low performance
+- no relationships
+- separated files ---> inconsistency appears and duplicatios
+- no security or permissions 
+- long time programming
+- there is no only one standard
+- no data quality
+- backup and restore
+
+
